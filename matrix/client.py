@@ -91,7 +91,7 @@ def main():
 
     # Łączymy się z managerem
     try:
-        mng = QueueManager(address=('localhost', 50000), authkey=b'abracadabra')
+        mng = QueueManager(address=('192.168.0.45', 50000), authkey=b'abracadabra')
         mng.connect()
     except Exception as e:
         print(f"Błąd przy łączeniu z managerem: {e}")

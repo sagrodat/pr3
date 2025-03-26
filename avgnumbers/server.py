@@ -16,7 +16,7 @@ def main():
     QueueManager.register('get_queue_results', callable=lambda: qResults)
 
     # Uruchamiamy serwer managera
-    m = QueueManager(address=('localhost', 50000), authkey=b'abracadabra')
+    m = QueueManager(address=('192.168.0.45', 50000), authkey=b'abracadabra')
     s = m.get_server()  # Tworzymy serwer
     print("Manager server is running...")  # Informacja o uruchomieniu serwera
     s.serve_forever()  # Uruchamiamy serwer

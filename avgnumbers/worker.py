@@ -51,7 +51,7 @@ def main():
 
     try:
         # Łączymy się z serwerem managera
-        mng = QueueManager(address=('localhost', 50000), authkey=b'abracadabra')
+        mng = QueueManager(address=('192.168.0.45', 50000), authkey=b'abracadabra')
         mng.connect()
         dataQueue = mng.get_queue_data()  # Pobieramy kolejkę danych
         resultsQueue = mng.get_queue_results()  # Pobieramy kolejkę wyników
